@@ -1,0 +1,61 @@
+.Hero-image {
+  width: 100%;
+}
+
+.Resource {
+  background-color: #f4f5f7;
+  padding: 7rem 0;
+}
+
+.Resource-text-box {
+  max-width: 45rem;
+  margin-bottom: 7rem;
+}
+
+.Resource-employee-img {
+  width: 100%;
+}
+
+.Resource-employee {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.sponsor-image {
+  height: 5rem;
+}
+
+.Service {
+  padding: 10rem 0 20rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Hero,
+  .Resource,
+  .Service,
+  .sponsors {
+    padding: 0 3rem;
+  }
+
+  .sponsors {
+    padding-bottom: 3rem;
+  }
+
+  .Resource,
+  .Service {
+    padding-top: 3rem;
+  }
+
+  .Resource-text-box {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .highlight {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,20 @@
+.AppCard {
+  padding: 32px 32px 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  height: 28rem;
+}
+
+@media only screen and (max-width: 1012px) {
+  .AppCard {
+    height: 35rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .AppCard {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,45 @@
+.AppFooter {
+  background: #091e42;
+  padding: 6rem 6rem 3rem 6rem;
+  color: #fff;
+}
+
+.AppFooter-logo {
+  width: 20rem;
+}
+
+.AppFooter-text1 {
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 145%;
+}
+
+.AppFooter-text2 {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+.AppFooter-icon {
+  height: 3rem;
+  cursor: pointer;
+}
+
+.AppFooter-icon:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .AppFooter > div {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .AppFooter-left,
+  .AppFooter-right {
+    justify-content: center;
+    align-items: center;
+  }
+}

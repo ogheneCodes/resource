@@ -1,0 +1,24 @@
+.Dashboard {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.Dashboard h1 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+  color: #091e42;
+}
+
+.Dashboard-inner {
+  width: 700px;
+  margin-left: 5rem;
+}
+
+.notification {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  height: 80px;
+  padding: 0 2rem;
+}

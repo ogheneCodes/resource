@@ -1,0 +1,58 @@
+.AppHeader {
+  padding: 3rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* font-size: 50px; */
+}
+
+.AppHeader-left > a,
+.AppHeader-left > img {
+  margin-right: 3rem;
+}
+
+.AppHeader-link {
+  font-weight: 450;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #091e42;
+  text-decoration: none;
+}
+
+.AppHeader-left,
+.AppHeader-right {
+  display: flex;
+  align-items: center;
+}
+
+.AppHeader-right {
+}
+
+.AppHeader-logo {
+  height: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .AppHeader-logo,
+  .AppHeader-logo,
+  .AppHeader-link-wrapper {
+    display: none;
+  }
+
+  .AppHeader {
+    padding: 3rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .AppHeader-logo-sub,
+  .AppHeader-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .AppHeader {
+    padding: 3rem;
+  }
+}

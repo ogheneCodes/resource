@@ -1,0 +1,61 @@
+.Auth p {
+  margin: 0;
+  padding: 0;
+}
+
+.Auth {
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Auth-box {
+  padding: 2rem 3rem;
+  background-color: #fff;
+  width: 480px;
+  border-radius: 8px;
+  margin-top: 4rem;
+  box-shadow: 0px 8px 12px 0px #091e4226;
+}
+
+.Auth-heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 1rem !important;
+}
+
+.Auth-text {
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #42526e;
+}
+
+.Auth-image1,
+.Auth-image2 {
+  position: fixed;
+  height: 30rem;
+}
+
+.Auth-image1 {
+  left: 0;
+  bottom: 0;
+}
+
+.Auth-image2 {
+  right: 0;
+  bottom: 0;
+}
+
+.Auth-forget {
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0052cc;
+  cursor: pointer;
+}

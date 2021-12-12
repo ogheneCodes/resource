@@ -1,0 +1,55 @@
+.DashHeader {
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(193, 199, 208, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  /* position: relative; */
+}
+
+.DashHeader-left {
+  display: flex;
+  align-items: center;
+}
+
+.DashHeader-logo {
+  height: 3rem;
+  padding: 0 2rem;
+  border-right: 1px solid #c1c7d0;
+}
+
+.DashHeader-tm {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  padding-left: 2rem;
+}
+
+.DashHeader-avatar {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Dropdown {
+  position: absolute;
+  right: 2rem;
+  top: 8rem;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px rgba(9, 30, 66, 0.2),
+    0px 0px 1px rgba(9, 30, 66, 0.31);
+  border-radius: 3px;
+  width: 300px;
+}
+
+.Dropdown-wrapper {
+  padding: 2rem;
+}
+
+.Dropdown-text {
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 20px;
+  color: #172b4d;
+}

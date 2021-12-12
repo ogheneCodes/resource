@@ -1,0 +1,22 @@
+.AppButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #0052cc;
+  border: none;
+  border-radius: 4px;
+  color: rgb(236, 229, 229);
+  cursor: pointer;
+}
+
+.AppButton:disabled,
+[disabled] {
+  background-color: #cccccc85;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
