@@ -1,4 +1,4 @@
-import "./Login.css";
+// import "./Login.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import authImage1 from "../../assets/auth-image1.png";
@@ -9,43 +9,43 @@ import { Input, Divider, notification, Image } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 import logo from "../../assets/logo4.svg";
 
-const Login = ({ users }) => {
+const Signup = ({ handleSignup }) => {
   const [user, setUser] = useState({});
   const [current, setCurrent] = useState(1);
-  const navigate = useNavigate();
+  let navigate = useNavigate();
 
   const netWorkLatency = 1000;
 
   // User store: Could add more users
-  AuthenticationApi.configure(netWorkLatency, users);
+  const userStore = [
+    { id: 1, username: "ebobomaxwwell25@gmail.com", password: "password" },
+    { id: 2, username: "test@gmail.com", password: "password" },
+  ];
+  AuthenticationApi.configure(netWorkLatency, userStore);
 
   const handleSubmit = async () => {
     if (current === 1) {
-      const currUser = users?.find((u) => u?.username === user?.username);
-      if (!currUser) {
+      if (!user?.username?.trim()) {
         return notification.error({
           title: "Error",
-          message: "Invalid user",
+          message: "Username is required!",
         });
       }
       setCurrent(2);
     }
     if (current === 2) {
-      try {
-        const res = await AuthenticationApi.authenticate(
-          user?.username,
-          user?.password
-        );
-        notification.success({
-          message: "Login successful",
-        });
-        navigate("/");
-      } catch (ex) {
-        notification.error({
+      if (!user?.password?.trim()) {
+        return notification.error({
           title: "Error",
-          message: ex,
+          message: "Password is required!",
         });
       }
+      handleSignup(user);
+      notification.success({
+        title: "Success",
+        message: "Successfully signed up!",
+      });
+      navigate("/login");
     }
   };
 
@@ -56,7 +56,7 @@ const Login = ({ users }) => {
       </div>
       <div className="Auth-box">
         <div className="center">
-          <p className="Auth-heading">Log in</p>
+          <p className="Auth-heading">Sign up</p>
           <p className="Auth-tex">Access your resource edge account</p>
           <div className="mt20">
             {current === 1 ? (
@@ -93,4 +93,4 @@ const Login = ({ users }) => {
   );
 };
 
-export default Login;
+export default Signup;

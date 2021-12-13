@@ -1,5 +1,5 @@
 import "./Landing.css";
-import { Row, Col, Drawer } from "antd";
+import { Row, Col, Drawer, Image } from "antd";
 
 import heroImage from "../../assets/hero-image.png";
 import groupIcon from "../../assets/group.svg";
@@ -173,10 +173,15 @@ const Landing = () => {
           </div>
 
           <div className="sponsors">
-            <Row>
+            <Row align="middle" gutter={10}>
               {sponsors.map((sponsor) => (
-                <Col span={6}>
-                  <img src={sponsor} alt="sponsor" className="sponsor-image" />
+                <Col sm={12} md={6}>
+                  <Image
+                    preview={false}
+                    src={sponsor}
+                    alt="sponsor"
+                    className="sponsor-image"
+                  />
                 </Col>
               ))}
             </Row>

@@ -59,3 +59,14 @@
   color: #0052cc;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .Auth-image1,
+  .Auth-image2 {
+    display: none;
+  }
+
+  .Auth-box {
+    max-width: 300px;
+  }
+}

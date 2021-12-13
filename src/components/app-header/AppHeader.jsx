@@ -25,7 +25,7 @@ const AppHeader = () => {
         </div>
         <div className="AppHeader-right">
           <div className="AppHeader-link-wrapper flex-row align-items-center">
-            <Link to="/login" className="btn-link mr20 AppHeader-cta">
+            <Link to="/signup" className="btn-link mr20 AppHeader-cta">
               Sign up
             </Link>
             <Link to="/login" className="btn-primary AppHeader-cta">
@@ -62,12 +62,15 @@ const AppHeader = () => {
           </a>
         </div>
         <div className="flex-column">
-          <a href="#" className="btn-link btn-link-sub AppHeader-cta mb20">
+          <Link
+            to="/signup"
+            className="btn-link btn-link-sub AppHeader-cta mb20"
+          >
             Sign up
-          </a>
-          <a href="#" className="btn-primary AppHeader-cta">
+          </Link>
+          <Link to="/login" className="btn-primary AppHeader-cta">
             Sign in
-          </a>
+          </Link>
         </div>
       </Drawer>
     </>
