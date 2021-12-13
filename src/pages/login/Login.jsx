@@ -39,7 +39,7 @@ const Login = ({ users }) => {
         notification.success({
           message: "Login successful",
         });
-        navigate("/");
+        navigate("/dashboard");
       } catch (ex) {
         notification.error({
           title: "Error",
