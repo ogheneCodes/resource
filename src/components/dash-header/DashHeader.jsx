@@ -4,7 +4,7 @@ import avatar from "../../assets/avatar.svg";
 import employee from "../../assets/employee.svg";
 import talent from "../../assets/talent.svg";
 import check from "../../assets/check.svg";
-
+import { Link } from "react-router-dom";
 import "./DashHeader.css";
 import { useState } from "react";
 
@@ -39,9 +39,9 @@ const DashHeader = () => {
         </div>
         <hr />
         <div style={{ padding: "1rem 2rem" }}>
-          <a href="" className="AppHeader-link">
+          <Link className="AppHeader-link" to="/">
             Logout
-          </a>
+          </Link>
         </div>
       </div>
       <div className="DashHeader-left">
